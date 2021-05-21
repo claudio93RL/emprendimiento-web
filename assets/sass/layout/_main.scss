@@ -1,0 +1,52 @@
+.main {
+    &__container {
+        border: 1px solid $black;
+        padding: 1rem;
+        margin: 2rem 0;
+
+        @include respond-to ("md"){
+            & {
+             margin-right: 2rem;
+                &:last-of-type{
+                    margin-right: 0;
+                }
+            }
+        }    
+    }
+    &__article {
+        border: 1px dotted $black;
+        padding: 1rem;
+        margin: 1rem 0;
+        &__media {
+            display: flex;
+        }
+        &__item {
+            margin-right: 1rem;
+            &:last-of-type {
+                margin-right: 0;
+            }
+            &--number {
+                display: inline;
+            }
+        }
+    }
+    &__section {
+        text-align: center;
+        &--text{
+            text-align: left;
+        }
+        &__list
+        {   
+            list-style:circle;
+            text-align: left;
+        }
+        &--img-dev{
+            border: 1px solid $black;
+            border-radius: 100%;
+            width: 20rem;
+        }
+        & object{
+            width: 20rem;
+        }
+    }
+}

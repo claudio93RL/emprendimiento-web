@@ -1,0 +1,12 @@
+.header{
+    width: 100%;
+    text-align: center;
+    & img {
+        width: 80%;
+    }
+    @include respond-to("lg"){
+        & img{
+            width: 50%;
+        }
+    }
+}

@@ -1,0 +1,114 @@
+@keyframes rotate {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+@keyframes translate {
+  from{
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(55px);
+  
+  }
+}
+
+.svg-container {
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+
+}
+.imgr{
+  animation: infinite rotate linear 10s;
+  position: absolute;
+  top: 100rem;
+  left: 17rem;
+}
+
+.imgl{
+  animation: infinite translate alternate 3s;
+  position: absolute;
+  top: 3rem;
+  left: 8rem;
+}
+
+@media (min-width: 320px){
+  .imgr {
+    top: 8rem;
+    left: 15rem;
+  }
+  .imgl{
+    top: 3rem;
+    left: 8rem;
+  }
+}
+@media (min-width: 359px){
+  .imgr {
+    top: 8rem;
+    left: 17rem;
+  }
+  .imgl{
+    top: 3rem;
+    left: 8rem;
+  }
+}
+
+@media (min-width: 374px){
+  .imgr {
+    top: 8rem;
+    left: 18rem;
+  }
+  .imgl{
+    top: 3rem;
+    left: 8rem;
+  }
+}
+
+@media (min-width: 400px){
+  .imgr {
+    top: 8rem;
+    left: 20rem;
+  }
+  .imgl{
+    top: 3rem;
+    left: 9rem;
+  }
+}
+
+@media (min-width: 767px){
+  .imgr {
+    top: 8rem;
+    left: 19rem;
+  }
+  .imgl{
+    top: 3rem;
+    left: 9rem;
+  }
+}
+
+@media (min-width: 1023px){
+  .imgr {
+    top: 8rem;
+    left: 25rem;
+  }
+  .imgl{
+    top: 3rem;
+    left: 9rem;
+  }
+}
+
+@media (min-width: 1400px){
+  .imgr {
+    top: 8rem;
+    left: 37rem;
+  }
+  .imgl{
+    top: 3rem;
+    left: 25rem;
+  }
+}
